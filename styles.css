@@ -1,0 +1,72 @@
+/* We Fix Boats — East Coast (v2: photo-forward, trust-driven) */
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; background:#081c33; color:#fff; line-height:1.6; }
+.wrap { max-width:640px; margin:0 auto; }
+a { color:#f5a623; }
+img { display:block; max-width:100%; }
+
+/* Header */
+nav.top { display:flex; align-items:center; justify-content:space-between; padding:10px 16px; border-bottom:1px solid #1e4e86; position:sticky; top:0; background:#081c33; z-index:10; }
+nav.top .brand img { height:44px; width:auto; }
+nav.top .call { background:#f5a623; color:#081c33; font-weight:800; font-size:14px; padding:10px 16px; border-radius:10px; text-decoration:none; }
+nav.links { display:flex; gap:2px; padding:8px 10px; border-bottom:1px solid #1e4e86; overflow-x:auto; background:#0a2540; }
+nav.links a { color:#9fc3e8; font-size:13px; text-decoration:none; padding:8px 10px; white-space:nowrap; }
+nav.links a.active { color:#fff; font-weight:700; border-bottom:2px solid #f5a623; }
+
+/* Photo hero */
+.hero-photo { position:relative; }
+.hero-photo img { width:100%; height:300px; object-fit:cover; }
+.hero-overlay { position:absolute; inset:0; background:linear-gradient(180deg,rgba(8,28,51,.15) 0%,rgba(8,28,51,.88) 100%); display:flex; flex-direction:column; justify-content:flex-end; padding:22px 20px; }
+.hero-overlay h1 { font-size:31px; line-height:1.2; text-shadow:0 2px 8px rgba(0,0,0,.6); }
+.hero-overlay .sub { color:#cfe3f8; font-size:14.5px; margin-top:6px; text-shadow:0 1px 4px rgba(0,0,0,.6); }
+
+/* Trust bar */
+.trustbar { display:flex; background:#0d2c52; border-top:1px solid #1e4e86; border-bottom:1px solid #1e4e86; }
+.trustbar div { flex:1; text-align:center; padding:12px 4px; font-size:12px; color:#c9def5; border-right:1px solid #1e4e86; }
+.trustbar div:last-child { border-right:none; }
+.trustbar b { display:block; font-size:15px; color:#fff; }
+
+/* CTAs */
+.callbtn { display:block; background:#f5a623; color:#081c33; font-weight:800; font-size:19px; text-align:center; padding:15px; margin:18px; border-radius:12px; text-decoration:none; }
+.textbtn { display:block; border:2px solid #9fc3e8; color:#fff; font-weight:700; font-size:15px; text-align:center; padding:12px; margin:0 18px 18px; border-radius:12px; text-decoration:none; }
+
+/* Sections */
+section { padding:22px 18px; }
+section.alt { background:#0a2540; border-top:1px solid #1e4e86; border-bottom:1px solid #1e4e86; }
+section h2 { font-size:13px; color:#f5a623; margin-bottom:4px; letter-spacing:2px; text-transform:uppercase; }
+section .lede { font-size:20px; font-weight:700; margin-bottom:12px; }
+.card { background:#123a6b; border:1px solid #2c5f9e; border-radius:12px; padding:16px; margin-bottom:14px; }
+.card h3 { color:#fff; font-size:16px; margin-bottom:6px; }
+.card p, .card li { color:#c9def5; font-size:14px; }
+.card ul { list-style:none; }
+.card li { padding:7px 0 7px 26px; border-bottom:1px solid #1e4e86; position:relative; }
+.card li:last-child { border-bottom:none; }
+.card li::before { content:"⚙"; position:absolute; left:2px; color:#f5a623; font-size:13px; }
+
+/* Gallery */
+.gallery { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+.gallery figure { background:#123a6b; border:1px solid #2c5f9e; border-radius:10px; overflow:hidden; }
+.gallery img { width:100%; height:130px; object-fit:cover; }
+.gallery figcaption { font-size:11.5px; color:#c9def5; padding:8px 10px; line-height:1.45; }
+
+/* Testimonials */
+.review { background:#123a6b; border:1px solid #2c5f9e; border-radius:12px; padding:16px; margin-bottom:12px; }
+.review .stars { color:#f5a623; font-size:15px; letter-spacing:2px; margin-bottom:6px; }
+.review p { font-size:13.5px; color:#dbe9fa; font-style:italic; }
+.review .who { margin-top:8px; font-size:12.5px; color:#9fc3e8; font-style:normal; }
+
+/* Pricing */
+.price .big { font-size:22px; font-weight:800; }
+.muted { color:#9fc3e8; font-size:13px; }
+.chips { display:flex; flex-wrap:wrap; gap:8px; margin-top:8px; }
+.chip { background:#123a6b; border:1px solid #2c5f9e; padding:8px 14px; border-radius:20px; font-size:14px; }
+.town { background:#123a6b; border:1px solid #2c5f9e; border-radius:12px; padding:14px 16px; margin-bottom:12px; }
+.town h3 { color:#fff; font-size:16px; margin-bottom:4px; }
+.town p { color:#c9def5; font-size:13.5px; }
+.faq dt { font-weight:700; font-size:15px; margin-top:14px; }
+.faq dd { color:#c9def5; font-size:14px; margin-top:4px; }
+header.page { text-align:center; padding:28px 20px 18px; }
+header.page h1 { font-size:28px; line-height:1.25; }
+header.page .sub { color:#9fc3e8; font-size:14px; margin-top:8px; }
+footer { text-align:center; padding:22px 20px 34px; color:#7fa8d0; font-size:13px; border-top:1px solid #1e4e86; line-height:1.7; }
+footer nav a { color:#9fc3e8; font-size:12px; margin:0 6px; text-decoration:none; }
