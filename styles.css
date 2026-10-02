@@ -8,6 +8,18 @@ img { display:block; max-width:100%; }
 /* Header */
 nav.top { display:flex; align-items:center; justify-content:space-between; padding:10px 16px; border-bottom:1px solid #1e4e86; position:sticky; top:0; background:#081c33; z-index:10; }
 nav.top .brand img { height:44px; width:auto; }
+nav.top .brand { display:flex; align-items:center; gap:10px; text-decoration:none; min-width:0; }
+nav.top .brand-text { display:flex; flex-direction:column; line-height:1.25; min-width:0; }
+nav.top .brand-name { color:#fff; font-weight:800; font-size:19px; letter-spacing:.4px; white-space:nowrap; }
+nav.top .brand-tag { color:#9fc3e8; font-size:12px; white-space:nowrap; }
+@media (max-width:560px) {
+  nav.top { padding:8px 12px; }
+  nav.top .brand img { height:38px; }
+  nav.top .brand { gap:8px; }
+  nav.top .brand-name { font-size:14px; }
+  nav.top .brand-tag { font-size:10px; }
+  nav.top .call { font-size:13px; padding:9px 12px; }
+}
 nav.top .call { background:#f5a623; color:#081c33; font-weight:800; font-size:14px; padding:10px 16px; border-radius:10px; text-decoration:none; }
 nav.links { display:flex; gap:2px; padding:8px 10px; border-bottom:1px solid #1e4e86; overflow-x:auto; background:#0a2540; }
 nav.links a { color:#9fc3e8; font-size:13px; text-decoration:none; padding:8px 10px; white-space:nowrap; }
